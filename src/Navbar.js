@@ -7,7 +7,6 @@ const Navbar = () => {
   const { openSidebar, closeSubmenu, openSubmenu } = useGlobalContext()
 
   const displaySubmenu = (e) => {
-    e.preventDefault()
     const page = e.target.textContent;
     const tempBtn = e.target.getBoundingClientRect()
     const center = (tempBtn.left + tempBtn.right) / 2;
