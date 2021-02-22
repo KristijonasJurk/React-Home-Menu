@@ -5,7 +5,7 @@ import { useGlobalContext } from './context';
 const Hero = () => {
   const { closeSubmenu } = useGlobalContext()
   return <section className='hero'>
-    <div className="hero-center">
+    <div className="hero-center" onMouseOver={closeSubmenu}>
       <article>
         <h1>Payments infrastructure for the internet</h1>
         <p>Millions of businesses of all sizes—from startups to large enterprises—use Stripe’s software and APIs to accept payments, send payouts, and manage their businesses online.</p>
